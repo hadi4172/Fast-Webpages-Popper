@@ -88,7 +88,7 @@ window.onload = function () {
                 { width: 800, height: 600, url: url, type: "popup" },
                 (window) => {
                     if (chkSaveSettings) {
-                        // Check if there are saved settings for this URL and apply them
+                        
                         loadSettings(url, (settings) => {
                             if (settings) {
                                 const { width, height, screenX, screenY } =

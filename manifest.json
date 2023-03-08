@@ -1,7 +1,7 @@
 {
     "name": "Fast Webpages Popper",
     "manifest_version": 3,
-    "version": "1",
+    "version": "2",
     "description": "Open saved webpages as popup pages in one click",
     "icons": {
         "128": "assets/icon128.png",

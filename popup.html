@@ -8,15 +8,29 @@
   </head>
   <body>
     <h1>Enter URLs to open as popups</h1>
+    <p id="save-instructions">
+      As you click the button [Open Popups], keep this window open 
+      and change the position of your popups for them to be saved
+    </p>
     <strong>Each url should be one a separate line</strong>
   </br>
-    <textarea id="urlInput" style="resize: none; white-space: nowrap;" rows="10" cols="50"></textarea><br>
+    <textarea id="urlInput" class="chan1" style="resize: none; white-space: nowrap;" rows="10" cols="50"></textarea><br>
     <label>
       <input type="checkbox" id="saveSettings">
       Save popups position and size
     </label><br>
-    <button id="save-urls">Save urls</button>
-    <button id="open-popups-btn">Open Popups</button>
-    <button id="close-popups-btn">Close Popups</button>
+
+    <div class="toggle chanBtns">
+      <input type="radio" name="sizeBy" value="chan1" num="1" id="chan1" />
+      <label for="chan1">Channel 1</label>
+      <input type="radio" name="sizeBy" value="chan2" num="2" id="chan2" />
+      <label for="chan2">Channel 2</label>
+      <input type="radio" name="sizeBy" value="chan3" num="3" id="chan3" />
+      <label for="chan3">Channel 3</label>
+  </div>
+
+  <button id="save-urls">Save urls</button>
+  <button id="open-popups-btn">Open Popups</button>
+  <button id="close-popups-btn">Close Popups</button>
   </body>
 </html>
